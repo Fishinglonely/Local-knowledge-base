@@ -4,13 +4,13 @@ from langchain.document_loaders import PyPDFLoader
 from llama_index import GPTMilvusIndex
 import gradio as gr
 
-HOST = "https://in03-dc41c1bb9c9c889.api.gcp-us-west1.zillizcloud.com"  # Host in Zilliz Cloud endpoint
+HOST = "xxx"  # Host in Zilliz Cloud endpoint
 PORT = 443  # Port in Zilliz Cloud endpoint
 
-USER = "1023145583@qq.com"  # Username for the cluster
-PASSWORD = "082930aA~"  # Password that goes with the user
+USER = "xxx"  # Username for the cluster
+PASSWORD = "xxx"  # Password that goes with the user
 
-environ["OPENAI_API_KEY"] = "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"  # OpenAI API Key
+environ["OPENAI_API_KEY"] = "sk-xxx"  # OpenAI API Key
 
 docs = []
 for file in glob("docs/*.pdf", recursive=True):
